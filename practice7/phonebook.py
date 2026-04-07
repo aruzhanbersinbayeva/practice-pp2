@@ -1,7 +1,5 @@
 import psycopg2
 from config import create
-
-# --- ПОДКЛЮЧЕНИЕ ---
 def get_conn():
     return psycopg2.connect(**create())
 
