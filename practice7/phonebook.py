@@ -15,7 +15,7 @@ def create_table():
                     phone VARCHAR(20)
                 )
             """)
-    print("Table created ✅")
+    print("Table created")
 
 # --- INSERT ---
 def insert():
@@ -27,7 +27,7 @@ def insert():
                 "INSERT INTO phonebook(username, phone) VALUES (%s, %s)",
                 (name, phone)
             )
-    print("Added ✅")
+    print("Added")
 
 # --- SHOW (SELECT) ---
 def show():
@@ -48,7 +48,7 @@ def update():
                 "UPDATE phonebook SET phone=%s WHERE username=%s",
                 (new_phone, name)
             )
-    print("Updated ✅")
+    print("Updated ")
 
 # --- DELETE ---
 def delete():
@@ -59,7 +59,7 @@ def delete():
                 "DELETE FROM phonebook WHERE username=%s",
                 (name,)
             )
-    print("Deleted ✅")
+    print("Deleted")
 
 # --- SEARCH ---
 def search():
